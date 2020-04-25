@@ -40,7 +40,7 @@
     <a href="https://en.wikipedia.org/wiki/Availability_heuristic">
       Availability Bias
     </a>
-    through facts about human progress.
+    through charts about human progress.
   </p>
 </header>
 
