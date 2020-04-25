@@ -12,7 +12,6 @@
 
   main {
     text-align: center;
-    padding: 1em;
     max-width: 640px;
     width: 100%;
     margin: 0 auto;
@@ -26,10 +25,14 @@
 
   footer {
     text-align: center;
-    width: 100%;
+    width: 100vw;
     bottom: 0;
     background-color: #000;
     color: #fff;
+    margin: 0 -1rem;
+  }
+
+  footer > p {
     padding: 1rem;
   }
 </style>

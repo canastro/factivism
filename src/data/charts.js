@@ -42,6 +42,7 @@ export default [
   {
     title: 'Malaria incidence per 1,000 population, 2000 to 2015',
     chartURL: 'https://ourworldindata.org/grapher/malaria-incidence-per-1000-population?tab=chart',
+    relatedArticles: []
   },
   {
     title: 'World GDP over the last two millennia',
