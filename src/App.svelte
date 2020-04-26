@@ -38,7 +38,7 @@
     color: #fff;
     margin-left: -1rem;
     margin-right: -1rem;
-    padding: 1rem;
+    padding: 1rem 0;
   }
 
   footer p + p {
