@@ -1,15 +1,30 @@
 <script>
   import { onMount } from "svelte";
-  import facts from './data/charts';
+  import { navigate } from "svelte-routing";
+
+  import facts from "./data/charts";
   import Stack from "./layout/Stack.svelte";
+
+  export let id;
 
   function generateRandomIndex() {
     return Math.floor(Math.random() * facts.length);
   }
 
+  function normalizeId(id) {
+    return id.toLowerCase().replace(/\s/g, "-");
+  }
+
+  function getFactIndexFromId(id) {
+    if (!id) return -1;
+    const normalizedId = normalizeId(id);
+    return facts.findIndex(fact => normalizeId(fact.title) === normalizedId);
+  }
+
   let currentIndex;
   onMount(() => {
-    currentIndex = generateRandomIndex();
+    const factIndex = getFactIndexFromId(id);
+    currentIndex = factIndex >= 0 ? factIndex : generateRandomIndex();
   });
 
   $: currentFact = currentIndex !== undefined ? facts[currentIndex] : null;
@@ -20,6 +35,9 @@
       newIndex = generateRandomIndex();
     }
 
+    navigate(`/${normalizeId(facts[newIndex].title)}`);
+
+    // TODO: we should have a reaction to the navigation to update the currentIndex
     currentIndex = newIndex;
   }
 </script>

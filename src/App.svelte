@@ -1,4 +1,5 @@
 <script>
+  import { Router, Link, Route } from "svelte-routing";
   import Fact from "./Fact.svelte";
 </script>
 
@@ -23,6 +24,11 @@
     margin-block-end: 0.5rem;
   }
 
+  h1 :global(a) {
+    text-decoration: none;
+    color: #000;
+  }
+
   footer {
     text-align: center;
     width: 100vw;
@@ -37,25 +43,34 @@
   }
 </style>
 
-<header>
-  <h1>Factivism</h1>
-  <p>
-    Escape the
-    <a href="https://en.wikipedia.org/wiki/Availability_heuristic">
-      Availability Bias
-    </a>
-    through charts about human progress.
-  </p>
-</header>
+<Router>
+  <header>
+    <h1>
+      <Link to="/">Factivism</Link>
+    </h1>
+    <p>
+      Escape the
+      <a href="https://en.wikipedia.org/wiki/Availability_heuristic">
+        Availability Bias
+      </a>
+      through charts about human progress.
+    </p>
+  </header>
 
-<main>
-  <Fact />
-</main>
+  <main>
+    <Route>
+      <Fact />
+    </Route>
+    <Route path="/:id" let:params>
+      <Fact id={params.id} />
+    </Route>
+  </main>
 
-<footer>
-  <p>
-    All data is from
-    <a href="https://ourworldindata.org/">ourworldindata</a>
-    , you should check it out.
-  </p>
-</footer>
+  <footer>
+    <p>
+      All data is from
+      <a href="https://ourworldindata.org/">ourworldindata</a>
+      , you should check it out.
+    </p>
+  </footer>
+</Router>

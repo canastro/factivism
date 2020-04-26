@@ -42,7 +42,7 @@ export default [
   {
     title: 'Malaria incidence per 1,000 population, 2000 to 2015',
     chartURL: 'https://ourworldindata.org/grapher/malaria-incidence-per-1000-population?tab=chart',
-    relatedArticles: []
+    relatedArticles: [],
   },
   {
     title: 'World GDP over the last two millennia',
@@ -64,6 +64,13 @@ export default [
         title: 'Economic Growth',
         url: 'https://ourworldindata.org/economic-growth',
       },
+    ],
+  },
+  {
+    title: 'Maternal Mortality Ratio, 1800 to 2015',
+    chartURL: 'https://ourworldindata.org/grapher/maternal-mortality?tab=chart',
+    relatedArticles: [
+      { title: 'Maternal Mortality', url: 'https://ourworldindata.org/maternal-mortality' },
     ],
   },
 ];
