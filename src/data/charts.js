@@ -73,4 +73,42 @@ export default [
       { title: 'Maternal Mortality', url: 'https://ourworldindata.org/maternal-mortality' },
     ],
   },
+  {
+    title: 'Five-year cancer survival rates by sex and race, 1963 to 2013',
+    chartURL: 'https://ourworldindata.org/grapher/five-year-cancer-survival-rates-by-sex-and-race',
+    relatedArticles: [],
+  },
+  {
+    title: 'Five-year cancer survival rates in the USA, All races, total, 1977 to 2013',
+    chartURL: 'https://ourworldindata.org/grapher/five-year-cancer-survival-in-usa?time=1977..2013',
+    relatedArticles: [
+      {
+        title: 'Cancer death rates are falling; five-year survival rates are rising',
+        url:
+          'https://ourworldindata.org/cancer-death-rates-are-falling-five-year-survival-rates-are-rising',
+      },
+    ],
+  },
+  {
+    title: 'Death rates from unsafe water sources, 1990 to 2017',
+    chartURL: 'https://ourworldindata.org/grapher/death-rates-unsafe-water?tab=chart',
+    relatedArticles: [{ title: 'Clean water', url: 'https://ourworldindata.org/water-access' }],
+  },
+  {
+    title:
+      'Battle-related deaths in state-based conflicts since 1946, by world region , 1946 to 2016',
+    chartURL:
+      'https://ourworldindata.org/grapher/battle-related-deaths-in-state-based-conflicts-since-1946-by-world-region',
+    relatedArticles: [{ title: 'War and Peace', url: 'https://ourworldindata.org/war-and-peace' }],
+  },
+  {
+    title: 'Global incidence of child labor',
+    chartURL: 'https://ourworldindata.org/grapher/global-incidence-of-child-labour-2',
+    relatedArticles: [{ title: 'Child Labor', url: 'https://ourworldindata.org/child-labor' }],
+  },
+  {
+    title: 'Various measures of child labor incidence, 1851 to 2012',
+    chartURL: 'https://ourworldindata.org/grapher/various-measures-of-child-labour-incidence',
+    relatedArticles: [{ title: 'Child Labor', url: 'https://ourworldindata.org/child-labor' }],
+  },
 ];

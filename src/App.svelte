@@ -1,6 +1,7 @@
 <script>
   import { Router, Link, Route } from "svelte-routing";
-  import Fact from "./Fact.svelte";
+  import Fact from "./pages/Fact.svelte";
+  import About from "./pages/About.svelte";
 </script>
 
 <style>
@@ -48,13 +49,6 @@
     <h1>
       <Link to="/">Factivism</Link>
     </h1>
-    <p>
-      Escape the
-      <a href="https://en.wikipedia.org/wiki/Availability_heuristic">
-        Availability Bias
-      </a>
-      through charts about human progress.
-    </p>
   </header>
 
   <main>
@@ -63,6 +57,9 @@
     </Route>
     <Route path="/:id" let:params>
       <Fact id={params.id} />
+    </Route>
+    <Route path="about">
+      <About />
     </Route>
   </main>
 

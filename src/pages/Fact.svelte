@@ -2,8 +2,8 @@
   import { onMount } from "svelte";
   import { navigate } from "svelte-routing";
 
-  import facts from "./data/charts";
-  import Stack from "./layout/Stack.svelte";
+  import facts from "../data/charts";
+  import Stack from "../components/layout/Stack.svelte";
 
   export let id;
 
@@ -65,26 +65,43 @@
     background: #1f1f1f;
     color: #fff;
   }
+
+  iframe {
+    width: 100%;
+    height: 600px;
+    border: 0px none;
+  }
+  .root {
+    min-height: 700px;
+  }
 </style>
 
-{#if currentFact}
-  <Stack>
-    <iframe
-      title={currentFact.title}
-      src={currentFact.chartURL}
-      style="width: 100%; height: 600px; border: 0px none;" />
+<div class="root">
 
-    {#each currentFact.relatedArticles as { title, url }}
-      <section class="articles">
-        <h2>Related articles</h2>
-        <ul>
-          <li>
-            <a href={url}>{title}</a>
-          </li>
-        </ul>
-      </section>
-    {/each}
+  <p>
+    Escape the
+    <a href="https://en.wikipedia.org/wiki/Availability_heuristic">
+      Availability Bias
+    </a>
+    through charts about human progress.
+  </p>
 
-    <button on:click={handleRandomClick}>Get random chart</button>
-  </Stack>
-{/if}
+  {#if currentFact}
+    <Stack>
+      <iframe title={currentFact.title} src={currentFact.chartURL} />
+
+      {#each currentFact.relatedArticles as { title, url }}
+        <section class="articles">
+          <h2>Related articles</h2>
+          <ul>
+            <li>
+              <a href={url}>{title}</a>
+            </li>
+          </ul>
+        </section>
+      {/each}
+
+      <button on:click={handleRandomClick}>Get random chart</button>
+    </Stack>
+  {/if}
+</div>
