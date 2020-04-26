@@ -135,21 +135,49 @@ export default [
   {
     title: 'Primary school enrollment, 1820 to 2010',
     chartURL: 'https://ourworldindata.org/grapher/primary-enrollment-selected-countries',
-    relatedArticles: [{ title: 'Global Education', url: 'https://ourworldindata.org/global-education' }],
+    relatedArticles: [
+      { title: 'Global Education', url: 'https://ourworldindata.org/global-education' },
+    ],
   },
   {
     title: 'Number of out-of-school children, World, 1970 to 2014',
     chartURL: 'https://ourworldindata.org/grapher/number-of-out-of-school-children',
-    relatedArticles: [{ title: 'Global Education', url: 'https://ourworldindata.org/global-education' }],
+    relatedArticles: [
+      { title: 'Global Education', url: 'https://ourworldindata.org/global-education' },
+    ],
   },
   {
     title: 'Mean years of schooling, 1870 to 2017',
     chartURL: 'https://ourworldindata.org/grapher/mean-years-of-schooling-1?tab=chart',
-    relatedArticles: [{ title: 'Global Education', url: 'https://ourworldindata.org/global-education' }],
+    relatedArticles: [
+      { title: 'Global Education', url: 'https://ourworldindata.org/global-education' },
+    ],
   },
   {
     title: 'Gender ratios for mean years of schooling, 1870 to 2010',
     chartURL: 'https://ourworldindata.org/grapher/gender-ratios-for-mean-years-of-schooling',
-    relatedArticles: [{ title: 'Global Education', url: 'https://ourworldindata.org/global-education' }],
+    relatedArticles: [
+      { title: 'Global Education', url: 'https://ourworldindata.org/global-education' },
+    ],
   },
+  {
+    title: 'Long-term wheat yields in Europe, 1850 to 2014',
+    chartURL: 'https://ourworldindata.org/grapher/long-term-wheat-yields-in-europe',
+    relatedArticles: [{ title: 'Crop yields', url: 'https://ourworldindata.org/crop-yields' }],
+  },
+  {
+    title: 'Crop yields, World, 1961 to 2018',
+    chartURL: 'https://ourworldindata.org/grapher/key-crop-yields',
+    relatedArticles: [{ title: 'Crop yields', url: 'https://ourworldindata.org/crop-yields' }],
+  },
+  {
+    title: 'Arable land needed to produce a fixed quantity of crops (1961 = 1), 1961 to 2014',
+    chartURL: 'https://ourworldindata.org/grapher/arable-land-pin',
+    relatedArticles: [{ title: 'Crop yields', url: 'https://ourworldindata.org/crop-yields' }],
+  },
+  {
+    title: 'Change in cereal production, yield and land use, World, 1961 to 2018',
+    chartURL: 'https://ourworldindata.org/grapher/index-of-cereal-production-yield-and-land-use',
+    relatedArticles: [{ title: 'Crop yields', url: 'https://ourworldindata.org/crop-yields' }],
+  }
 ];

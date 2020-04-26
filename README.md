@@ -1,10 +1,5 @@
 # Todo
-- About page
-- Responsive
 - Share to twitter
-- Deep link to chart
-- Tags
-- Search
 
 ## Run locally
 
