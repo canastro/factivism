@@ -6,9 +6,18 @@
   import Stack from "../components/layout/Stack.svelte";
 
   export let id;
+  let visited = new Set();
 
   function generateRandomIndex() {
-    return Math.floor(Math.random() * facts.length);
+    if (visited.size === facts.length) {
+      visited.clear();
+    }
+
+    let newIndex = Math.floor(Math.random() * facts.length);
+    while (newIndex === currentIndex || visited.has(newIndex)) {
+      newIndex = generateRandomIndex();
+    }
+    return newIndex;
   }
 
   function normalizeId(id) {
@@ -30,11 +39,7 @@
   $: currentFact = currentIndex !== undefined ? facts[currentIndex] : null;
 
   function handleRandomClick() {
-    let newIndex = generateRandomIndex();
-    while (newIndex === currentIndex) {
-      newIndex = generateRandomIndex();
-    }
-
+    const newIndex = generateRandomIndex();
     navigate(`/${normalizeId(facts[newIndex].title)}`);
 
     // TODO: we should have a reaction to the navigation to update the currentIndex

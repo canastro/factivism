@@ -36,11 +36,13 @@
     bottom: 0;
     background-color: #000;
     color: #fff;
-    margin: 0 -1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding: 1rem;
   }
 
-  footer > p {
-    padding: 1rem;
+  footer p + p {
+    margin-top: 0.5rem;
   }
 </style>
 
@@ -69,5 +71,6 @@
       <a href="https://ourworldindata.org/">ourworldindata</a>
       , you should check it out.
     </p>
+    <p>© 2020. All Rights Reserved.</p>
   </footer>
 </Router>
