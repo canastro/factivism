@@ -111,4 +111,45 @@ export default [
     chartURL: 'https://ourworldindata.org/grapher/various-measures-of-child-labour-incidence',
     relatedArticles: [{ title: 'Child Labor', url: 'https://ourworldindata.org/child-labor' }],
   },
+  {
+    title: 'Deaths caused by vaccine-preventable diseases, World, 1990 to 2017',
+    chartURL:
+      'https://ourworldindata.org/grapher/deaths-caused-by-vaccine-preventable-diseases?time=1990..',
+    relatedArticles: [{ title: 'Vaccination', url: 'https://ourworldindata.org/vaccination' }],
+  },
+  {
+    title: 'Global vaccination coverage, World, 1980 to 2018',
+    chartURL: 'https://ourworldindata.org/grapher/global-vaccination-coverage?time=..',
+    relatedArticles: [{ title: 'Vaccination', url: 'https://ourworldindata.org/vaccination' }],
+  },
+  {
+    title: 'Literacy rate, 1475 to 2015',
+    chartURL: 'https://ourworldindata.org/grapher/cross-country-literacy-rates',
+    relatedArticles: [{ title: 'Literacy', url: 'https://ourworldindata.org/literacy' }],
+  },
+  {
+    title: 'Literate and illiterate world population',
+    chartURL: 'https://ourworldindata.org/grapher/literate-and-illiterate-world-population',
+    relatedArticles: [{ title: 'Literacy', url: 'https://ourworldindata.org/literacy' }],
+  },
+  {
+    title: 'Primary school enrollment, 1820 to 2010',
+    chartURL: 'https://ourworldindata.org/grapher/primary-enrollment-selected-countries',
+    relatedArticles: [{ title: 'Global Education', url: 'https://ourworldindata.org/global-education' }],
+  },
+  {
+    title: 'Number of out-of-school children, World, 1970 to 2014',
+    chartURL: 'https://ourworldindata.org/grapher/number-of-out-of-school-children',
+    relatedArticles: [{ title: 'Global Education', url: 'https://ourworldindata.org/global-education' }],
+  },
+  {
+    title: 'Mean years of schooling, 1870 to 2017',
+    chartURL: 'https://ourworldindata.org/grapher/mean-years-of-schooling-1?tab=chart',
+    relatedArticles: [{ title: 'Global Education', url: 'https://ourworldindata.org/global-education' }],
+  },
+  {
+    title: 'Gender ratios for mean years of schooling, 1870 to 2010',
+    chartURL: 'https://ourworldindata.org/grapher/gender-ratios-for-mean-years-of-schooling',
+    relatedArticles: [{ title: 'Global Education', url: 'https://ourworldindata.org/global-education' }],
+  },
 ];
