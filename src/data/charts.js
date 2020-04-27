@@ -210,65 +210,68 @@ export default [
   },
   {
     title: 'Productivity per hour worked, 1950 to 2017',
-    chartURL: 'https://ourworldindata.org/grapher/labor-productivity-per-hour-PennWorldTable?time=1950..2017',
+    chartURL:
+      'https://ourworldindata.org/grapher/labor-productivity-per-hour-PennWorldTable?time=1950..2017',
     relatedArticles: [
-      { title: 'Loneliness and Social Connections', url: 'https://ourworldindata.org/social-connections-and-loneliness' },
+      {
+        title: 'Loneliness and Social Connections',
+        url: 'https://ourworldindata.org/social-connections-and-loneliness',
+      },
     ],
   },
   {
     title: 'Prevalence, new cases and deaths from HIV/AIDS, World, 1990 to 2017',
     chartURL: 'https://ourworldindata.org/grapher/deaths-and-new-cases-of-hiv',
-    relatedArticles: [
-      { title: 'Health', url: 'https://ourworldindata.org/health-meta' },
-    ],
+    relatedArticles: [{ title: 'Health', url: 'https://ourworldindata.org/health-meta' }],
   },
   {
     title: 'Death rate from smoking, 1990 to 2017',
     chartURL: 'https://ourworldindata.org/grapher/death-rate-smoking',
-    relatedArticles: [
-      { title: 'Smoking', url: 'https://ourworldindata.org/smoking' },
-    ],
+    relatedArticles: [{ title: 'Smoking', url: 'https://ourworldindata.org/smoking' }],
   },
   {
     title: 'Daily cigarette consumption per smoker, 1980 to 2012',
     chartURL: 'https://ourworldindata.org/grapher/consumption-per-smoker-per-day?tab=chart',
-    relatedArticles: [
-      { title: 'Smoking', url: 'https://ourworldindata.org/smoking' },
-    ],
+    relatedArticles: [{ title: 'Smoking', url: 'https://ourworldindata.org/smoking' }],
   },
   {
     title: 'Sales of cigarettes per adult per day, 1875 to 2015',
     chartURL: 'https://ourworldindata.org/grapher/sales-of-cigarettes-per-adult-per-day',
-    relatedArticles: [
-      { title: 'Smoking', url: 'https://ourworldindata.org/smoking' },
-    ],
+    relatedArticles: [{ title: 'Smoking', url: 'https://ourworldindata.org/smoking' }],
   },
   {
     title: 'Lung cancer death rates, 1950 to 2002',
     chartURL: 'https://ourworldindata.org/grapher/lung-cancer-deaths-per-100000-by-sex-1950-2002',
-    relatedArticles: [
-      { title: 'Smoking', url: 'https://ourworldindata.org/smoking' },
-    ],
+    relatedArticles: [{ title: 'Smoking', url: 'https://ourworldindata.org/smoking' }],
   },
   {
     title: 'Deaths from protein-energy malnutrition, by age, World, 1990 to 2017',
     chartURL: 'https://ourworldindata.org/grapher/malnutrition-deaths-by-age',
-    relatedArticles: [
-      { title: 'Famines', url: 'https://ourworldindata.org/famines' },
-    ],
+    relatedArticles: [{ title: 'Famines', url: 'https://ourworldindata.org/famines' }],
   },
   {
     title: 'Share of deaths from unsafe water sources, 1990 to 2017',
     chartURL: 'https://ourworldindata.org/grapher/share-deaths-unsafe-water?tab=chart',
-    relatedArticles: [
-      { title: 'Water Access', url: 'https://ourworldindata.org/water-access' },
-    ],
+    relatedArticles: [{ title: 'Water Access', url: 'https://ourworldindata.org/water-access' }],
   },
   {
     title: 'Share of the population with access to improved drinking water, 1990 to 2015',
-    chartURL: 'https://ourworldindata.org/grapher/share-of-the-population-with-access-to-improved-drinking-water?tab=chart',
+    chartURL:
+      'https://ourworldindata.org/grapher/share-of-the-population-with-access-to-improved-drinking-water?tab=chart',
+    relatedArticles: [{ title: 'Water Access', url: 'https://ourworldindata.org/water-access' }],
+  },
+  {
+    title: 'World population living in extreme poverty, 1820-2015',
+    chartURL: 'https://ourworldindata.org/grapher/world-population-in-extreme-poverty-absolute',
     relatedArticles: [
-      { title: 'Water Access', url: 'https://ourworldindata.org/water-access' },
+      { title: 'Extreme Poverty', url: 'https://ourworldindata.org/extreme-poverty' },
+    ],
+    quotes: [
+      {
+        text:
+          'On every day in the last 25 years there could have been a newspaper headline reading, “The number of people in extreme poverty fell by 128,000 since yesterday”.',
+        author: 'Max Roser',
+      },
     ],
   },
 ];

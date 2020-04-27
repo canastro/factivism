@@ -3,6 +3,7 @@
   import { navigate } from "svelte-routing";
 
   import facts from "../data/charts";
+  import Quote from "../components/ui/Quote.svelte";
   import Stack from "../components/layout/Stack.svelte";
 
   export let id;
@@ -30,13 +31,23 @@
     return facts.findIndex(fact => normalizeId(fact.title) === normalizedId);
   }
 
+  function getFactByIndex(index) {
+    if (!index) return null;
+
+    return Object.assign(
+      {},
+      { title: "", chartURL: "", relatedArticles: [], quotes: [] },
+      facts[currentIndex]
+    );
+  }
+
   let currentIndex;
   onMount(() => {
     const factIndex = getFactIndexFromId(id);
     currentIndex = factIndex >= 0 ? factIndex : generateRandomIndex();
   });
 
-  $: currentFact = currentIndex !== undefined ? facts[currentIndex] : null;
+  $: currentFact = getFactByIndex(currentIndex);
 
   function handleRandomClick() {
     const newIndex = generateRandomIndex();
@@ -94,6 +105,10 @@
   {#if currentFact}
     <Stack>
       <iframe title={currentFact.title} src={currentFact.chartURL} />
+
+      {#each currentFact.quotes as { text, author }}
+        <Quote {author}>{text}</Quote>
+      {/each}
 
       {#each currentFact.relatedArticles as { title, url }}
         <section class="articles">

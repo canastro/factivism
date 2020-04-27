@@ -1,38 +1,6 @@
-<style>
-  iframe {
-    border: 2px solid #000;
-  }
-
-  blockquote {
-    font-style: italic;
-    position: relative;
-    font-size: 1rem;
-    line-height: 1rem;
-    padding: 0 1.5rem;
-    margin: 1.5rem 0;
-  }
-
-  blockquote footer {
-    font-size: 1rem;
-    font-weight: 700;
-    color: #ccc;
-    float: right;
-  }
-
-  blockquote footer:before {
-    content: "\2015";
-  }
-  blockquote footer:after {
-    content: "\201D";
-    position: absolute;
-    top: 0.28em;
-    right: 0;
-    font-size: 6em;
-    font-style: italic;
-    color: #ccc;
-    z-index: -1;
-  }
-</style>
+<script>
+import Quote from '../components/ui/Quote.svelte';
+</script>
 
 <p>
   <a href="https://twitter.com/sapinker">Steven Pinker's</a>
@@ -49,7 +17,7 @@
   <i>"if it bleeds, it leads"</i>
   .
 </p>
-<blockquote>
+<Quote author="wikipedia">
   The availability heuristic, also known as availability bias, is a mental
   shortcut that relies on immediate examples that come to a given person's mind
   when evaluating a specific topic, concept, method or decision. The
@@ -58,8 +26,7 @@
   solutions which are not as readily recalled. Subsequently, under the
   availability heuristic, people tend to heavily weigh their judgments toward
   more recent information, making new opinions biased toward that latest news.
-  <footer>wikipedia</footer>
-</blockquote>
+</Quote>
 
 <p>
   We're everyday bombarded with negative news and often forgot how far humanity
