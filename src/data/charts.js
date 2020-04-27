@@ -179,5 +179,96 @@ export default [
     title: 'Change in cereal production, yield and land use, World, 1961 to 2018',
     chartURL: 'https://ourworldindata.org/grapher/index-of-cereal-production-yield-and-land-use',
     relatedArticles: [{ title: 'Crop yields', url: 'https://ourworldindata.org/crop-yields' }],
-  }
+  },
+  {
+    title: 'Computing efficiency, 1971 to 2015',
+    chartURL: 'https://ourworldindata.org/grapher/computing-efficiency',
+    relatedArticles: [
+      { title: 'Technological Progress', url: 'https://ourworldindata.org/technological-progress' },
+    ],
+  },
+  {
+    title: 'Cost of sequencing a full human genome, 2001 to 2015',
+    chartURL: 'https://ourworldindata.org/grapher/cost-of-sequencing-a-full-human-genome',
+    relatedArticles: [
+      { title: 'Technological Progress', url: 'https://ourworldindata.org/technological-progress' },
+    ],
+  },
+  {
+    title: "Moore's Law: Transistors per microprocessor",
+    chartURL: 'https://ourworldindata.org/grapher/transistors-per-microprocessor',
+    relatedArticles: [
+      { title: 'Technological Progress', url: 'https://ourworldindata.org/technological-progress' },
+    ],
+  },
+  {
+    title: 'Supercomputer Power (FLOPS), 1993 to 2017',
+    chartURL: 'https://ourworldindata.org/grapher/supercomputer-power-flops',
+    relatedArticles: [
+      { title: 'Technological Progress', url: 'https://ourworldindata.org/technological-progress' },
+    ],
+  },
+  {
+    title: 'Productivity per hour worked, 1950 to 2017',
+    chartURL: 'https://ourworldindata.org/grapher/labor-productivity-per-hour-PennWorldTable?time=1950..2017',
+    relatedArticles: [
+      { title: 'Loneliness and Social Connections', url: 'https://ourworldindata.org/social-connections-and-loneliness' },
+    ],
+  },
+  {
+    title: 'Prevalence, new cases and deaths from HIV/AIDS, World, 1990 to 2017',
+    chartURL: 'https://ourworldindata.org/grapher/deaths-and-new-cases-of-hiv',
+    relatedArticles: [
+      { title: 'Health', url: 'https://ourworldindata.org/health-meta' },
+    ],
+  },
+  {
+    title: 'Death rate from smoking, 1990 to 2017',
+    chartURL: 'https://ourworldindata.org/grapher/death-rate-smoking',
+    relatedArticles: [
+      { title: 'Smoking', url: 'https://ourworldindata.org/smoking' },
+    ],
+  },
+  {
+    title: 'Daily cigarette consumption per smoker, 1980 to 2012',
+    chartURL: 'https://ourworldindata.org/grapher/consumption-per-smoker-per-day?tab=chart',
+    relatedArticles: [
+      { title: 'Smoking', url: 'https://ourworldindata.org/smoking' },
+    ],
+  },
+  {
+    title: 'Sales of cigarettes per adult per day, 1875 to 2015',
+    chartURL: 'https://ourworldindata.org/grapher/sales-of-cigarettes-per-adult-per-day',
+    relatedArticles: [
+      { title: 'Smoking', url: 'https://ourworldindata.org/smoking' },
+    ],
+  },
+  {
+    title: 'Lung cancer death rates, 1950 to 2002',
+    chartURL: 'https://ourworldindata.org/grapher/lung-cancer-deaths-per-100000-by-sex-1950-2002',
+    relatedArticles: [
+      { title: 'Smoking', url: 'https://ourworldindata.org/smoking' },
+    ],
+  },
+  {
+    title: 'Deaths from protein-energy malnutrition, by age, World, 1990 to 2017',
+    chartURL: 'https://ourworldindata.org/grapher/malnutrition-deaths-by-age',
+    relatedArticles: [
+      { title: 'Famines', url: 'https://ourworldindata.org/famines' },
+    ],
+  },
+  {
+    title: 'Share of deaths from unsafe water sources, 1990 to 2017',
+    chartURL: 'https://ourworldindata.org/grapher/share-deaths-unsafe-water?tab=chart',
+    relatedArticles: [
+      { title: 'Water Access', url: 'https://ourworldindata.org/water-access' },
+    ],
+  },
+  {
+    title: 'Share of the population with access to improved drinking water, 1990 to 2015',
+    chartURL: 'https://ourworldindata.org/grapher/share-of-the-population-with-access-to-improved-drinking-water?tab=chart',
+    relatedArticles: [
+      { title: 'Water Access', url: 'https://ourworldindata.org/water-access' },
+    ],
+  },
 ];
