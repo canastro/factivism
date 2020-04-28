@@ -1,7 +1,7 @@
 <script>
   import { Router, Link, Route } from "svelte-routing";
-  import Fact from "./pages/Fact.svelte";
-  import About from "./pages/About.svelte";
+  import FactPage from "./pages/FactPage.svelte";
+  import AboutPage from "./pages/AboutPage.svelte";
   import Footer from "./components/ui/Footer.svelte";
 </script>
 
@@ -35,13 +35,13 @@
 
   <main>
     <Route>
-      <Fact />
+      <FactPage />
     </Route>
     <Route path="/:id" let:params>
-      <Fact id={params.id} />
+      <FactPage id={params.id} />
     </Route>
     <Route path="about">
-      <About />
+      <AboutPage />
     </Route>
   </main>
 

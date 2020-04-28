@@ -3,6 +3,7 @@
   import { navigate } from "svelte-routing";
 
   import facts from "../data/charts";
+  import Fact from "../components/ui/Fact.svelte";
   import Quote from "../components/ui/Quote.svelte";
   import Stack from "../components/layout/Stack.svelte";
 
@@ -73,6 +74,7 @@
     border: solid 2px #1f1f1f;
     background: transparent;
     color: #1f1f1f;
+    margin-top: 1rem;
   }
 
   button:active,
@@ -82,11 +84,6 @@
     color: #fff;
   }
 
-  iframe {
-    width: 100%;
-    height: 600px;
-    border: 0px none;
-  }
   .root {
     min-height: 700px;
   }
@@ -103,25 +100,8 @@
   </p>
 
   {#if currentFact}
-    <Stack>
-      <iframe title={currentFact.title} src={currentFact.chartURL} />
-
-      {#each currentFact.quotes as { text, author }}
-        <Quote {author}>{text}</Quote>
-      {/each}
-
-      {#each currentFact.relatedArticles as { title, url }}
-        <section class="articles">
-          <h2>Related articles</h2>
-          <ul>
-            <li>
-              <a href={url}>{title}</a>
-            </li>
-          </ul>
-        </section>
-      {/each}
-
-      <button on:click={handleRandomClick}>Get random chart</button>
-    </Stack>
+    <Fact fact={currentFact} />
   {/if}
+
+  <button on:click={handleRandomClick}>Get random chart</button>
 </div>
