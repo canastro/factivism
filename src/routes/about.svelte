@@ -1,10 +1,10 @@
-<svelte:head>
-	<title>About</title>
-</svelte:head>
-
 <script>
-import Quote from '../components/ui/Quote.svelte';
+  import Quote from "../components/ui/Quote.svelte";
 </script>
+
+<svelte:head>
+  <title>Factivism: About</title>
+</svelte:head>
 
 <p>
   <a href="https://twitter.com/sapinker">Steven Pinker's</a>

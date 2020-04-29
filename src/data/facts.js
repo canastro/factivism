@@ -5,14 +5,20 @@ export default [
     relatedArticles: [
       { title: 'Life Expectancy', url: 'https://ourworldindata.org/life-expectancy' },
     ],
-    quotes: [],
+    quotes: [
+      {
+        author: 'by Max Roser, Esteban Ortiz-Ospina and Hannah Ritchie',
+        text:
+          'Since 1900 the global average life expectancy has more than doubled and is now above 70 years.',
+      },
+    ],
     slug: 'life-expectancy',
     thumbnail: 'https://ourworldindata.org/grapher/exports/life-expectancy.png?v=21',
   },
   {
     title: 'Daily supply of calories',
     chartURL: 'https://ourworldindata.org/grapher/food-supply-kcal?tab=chart',
-    relatedArticles: [{ title: 'Food supply', url: 'https://ourworldindata.org/life-expectancy' }],
+    relatedArticles: [{ title: 'Food supply', url: 'https://ourworldindata.org/food-supply' }],
     quotes: [],
     slug: 'daily-supply-of-calories',
     thumbnail: 'https://ourworldindata.org/grapher/exports/food-supply-kcal.png?v=6',
@@ -23,7 +29,13 @@ export default [
     relatedArticles: [
       { title: 'Child and Infant Mortality', url: 'https://ourworldindata.org/child-mortality' },
     ],
-    quotes: [],
+    quotes: [
+      {
+        author: 'by Max Roser, Hannah Ritchie and Bernadeta Dadonaite',
+        text:
+          'Child mortality today is the lowest it has ever been. In less than three decades child mortality has more than halved — from 12.6 million in 1990 to 5.4 million in 2017. This is a huge accomplishment that should not be overlooked.',
+      },
+    ],
     slug: 'child-mortality',
     thumbnail:
       'https://ourworldindata.org/grapher/exports/child-mortality-around-the-world.png?v=4',
@@ -32,15 +44,27 @@ export default [
     title: 'Number of new cases of HIV, 1990 to 2017',
     chartURL: 'https://ourworldindata.org/grapher/new-cases-of-hiv-infection?tab=chart',
     relatedArticles: [{ title: 'HIV / AIDS', url: 'https://ourworldindata.org/hiv-aids' }],
-    quotes: [],
+    quotes: [
+      {
+        author: 'by Max Roser and Hannah Ritchie',
+        text:
+          'Between 1996 and 2001 more than 3 million people were infected with HIV ever year. Since then the number of new infections began to decline and in 2017 it was reduced to below 2 million. The lowest number of new infections since 1990.',
+      },
+    ],
     slug: 'number-of-new-cases-of-hiv',
     thumbnail: 'https://ourworldindata.org/grapher/exports/new-cases-of-hiv-infection.png?v=5',
   },
   {
     title: 'Malaria incidence per 1,000 population, 2000 to 2015',
     chartURL: 'https://ourworldindata.org/grapher/malaria-incidence-per-1000-population?tab=chart',
-    relatedArticles: [],
-    quotes: [],
+    relatedArticles: [{ title: 'Malaria', url: 'https://ourworldindata.org/malaria' }],
+    quotes: [
+      {
+        author: 'by Max Roser and Hannah Ritchie',
+        text:
+          'Since the beginning of the 21st century, the WHO has published global estimates of the number of people that die from malaria. In these 15 years the global death toll has been cut in half: from 839,000 deaths in 2000 to 438,000 in 2015.',
+      },
+    ],
     slug: 'malaria-incidence-per-1,000-population',
     thumbnail:
       'https://ourworldindata.org/grapher/exports/malaria-incidence-per-1000-population.png?v=1',
@@ -118,8 +142,7 @@ export default [
       'https://ourworldindata.org/grapher/battle-related-deaths-in-state-based-conflicts-since-1946-by-world-region',
     relatedArticles: [{ title: 'War and Peace', url: 'https://ourworldindata.org/war-and-peace' }],
     quotes: [],
-    slug:
-      'battle-related-deaths-in-state-based-conflicts-since-1946',
+    slug: 'battle-related-deaths-in-state-based-conflicts-since-1946',
     thumbnail:
       'https://ourworldindata.org/grapher/exports/battle-related-deaths-in-state-based-conflicts-since-1946-by-world-region.png?v=1',
   },
@@ -314,7 +337,7 @@ export default [
     chartURL: 'https://ourworldindata.org/grapher/deaths-and-new-cases-of-hiv',
     relatedArticles: [{ title: 'Health', url: 'https://ourworldindata.org/health-meta' }],
     quotes: [],
-    slug: 'prevalence,-new-cases-and-deaths-from-hiv-aids',
+    slug: 'prevalence-new-cases-and-deaths-from-hiv-aids',
     thumbnail: 'https://ourworldindata.org/grapher/exports/deaths-and-new-cases-of-hiv.png?v=6',
   },
   {

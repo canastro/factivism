@@ -58,6 +58,7 @@
 </style>
 
 <svelte:head>
+  <title>{`Factivism: ${fact.title}`}</title>
   <meta property="og:url" content={`https://factivism.io/fact/${fact.slug}`} />
   <meta property="og:title" content={fact.title} />
   <meta
