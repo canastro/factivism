@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>About</title>
+</svelte:head>
+
 <script>
 import Quote from '../components/ui/Quote.svelte';
 </script>

@@ -1,0 +1,106 @@
+<script context="module">
+  export async function preload({ params, query }) {
+    // the `slug` parameter is available because
+    // this file is called [slug].svelte
+    const res = await this.fetch(`fact/${params.slug}.json`);
+    const data = await res.json();
+
+    if (res.status === 200) {
+      return { fact: data };
+    } else {
+      this.error(res.status, data.message);
+    }
+  }
+</script>
+
+<script>
+  import Quote from "../../components/ui/Quote.svelte";
+  import Stack from "../../components/layout/Stack.svelte";
+
+  export let fact;
+</script>
+
+<style>
+  .root {
+    min-height: 700px;
+    margin: 1rem;
+  }
+
+  iframe {
+    width: 100%;
+    height: 600px;
+    border: 0px none;
+  }
+
+  .random {
+    display: block;
+    cursor: pointer;
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+    transition: all 0.4s ease-in-out;
+    border: solid 2px #1f1f1f;
+    background: transparent;
+    color: #1f1f1f;
+  }
+
+  .random:active,
+  .random:hover {
+    border: solid 2px #1f1f1f;
+    background: #1f1f1f;
+    color: #fff;
+  }
+</style>
+
+<svelte:head>
+  <meta property="og:url" content={`https://factivism.io/fact/${fact.slug}`} />
+  <meta property="og:title" content={fact.title} />
+  <meta
+    property="og:description"
+    content={`A chart about ${fact.title} from ourworldindata.org`} />
+  <meta property="og:image" content={fact.thumbnail} />
+  <meta property="og:site_name" content="Factivism" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@canastro" />
+  <meta name="twitter:creator" content="@canastro" />
+  <meta name="twitter:title" content={fact.title} />
+  <meta
+    name="twitter:description"
+    content={`A chart about ${fact.title} from ourworldindata.org`} />
+  <meta name="twitter:image" content={fact.thumbnail} />
+</svelte:head>
+
+<div class="root">
+  <p>
+    Escape the
+    <a href="https://en.wikipedia.org/wiki/Availability_heuristic">
+      Availability Bias
+    </a>
+    through charts about human progress.
+  </p>
+  <Stack>
+    <iframe title={fact.title} src={fact.chartURL} />
+
+    {#each fact.quotes as { text, author }}
+      <Quote {author}>{text}</Quote>
+    {/each}
+
+    {#each fact.relatedArticles as { title, url }}
+      <section class="articles">
+        <h2>Related articles</h2>
+        <ul>
+          <li>
+            <a href={url}>{title}</a>
+          </li>
+        </ul>
+      </section>
+    {/each}
+
+    <a class="random" href="/fact">Get random chart</a>
+  </Stack>
+</div>
