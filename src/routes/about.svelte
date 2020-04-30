@@ -33,8 +33,8 @@
 </Quote>
 
 <p>
-  We're everyday bombarded with negative news and often forgot how far humanity
-  has come. Serves this site to randomly present you a chart that shows how
+  We're everyday bombarded with negative news and often forget how far humanity
+  has come. This site to randomly presents you a chart that shows how
   we're progressing in multiple fronts, and that things are not as bad as we
   perceive it.
 </p>

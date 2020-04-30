@@ -78,11 +78,10 @@
 
 <div class="root">
   <p>
-    Escape the
-    <a href="https://en.wikipedia.org/wiki/Availability_heuristic">
-      Availability Bias
-    </a>
-    through charts about human progress.
+    We're everyday bombarded with negative news and often forget how far
+    humanity has come. This site to randomly presents you a chart that shows how
+    we're progressing in multiple fronts, and that things are not as bad as we
+    perceive it.
   </p>
   <Stack>
     <iframe title={fact.title} src={fact.chartURL} />
