@@ -1,5 +1,5 @@
 <script>
-  import Quote from "../components/ui/Quote.svelte";
+  import Quote from "../components/ui/quote.svelte";
 </script>
 
 <svelte:head>

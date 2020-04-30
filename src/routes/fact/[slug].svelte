@@ -14,9 +14,9 @@
 </script>
 
 <script>
-  import Quote from "../../components/ui/Quote.svelte";
-  import Link from "../../components/ui/Link.svelte";
-  import Stack from "../../components/layout/Stack.svelte";
+  import Quote from "../../components/ui/quote.svelte";
+  import Link from "../../components/ui/link.svelte";
+  import Stack from "../../components/layout/stack.svelte";
 
   export let fact;
 </script>

@@ -1,5 +1,5 @@
 <script>
-  import Link from "../components/ui/Link.svelte";
+  import Link from "../components/ui/link.svelte";
 </script>
 
 <style>
