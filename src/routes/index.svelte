@@ -1,11 +1,13 @@
 <script>
-  import { goto } from "@sapper/app";
-  import Loader from "../components/ui/Loader.svelte";
-  goto("fact");
+  import Link from "../components/ui/Link.svelte";
 </script>
 
 <style>
   .root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     min-height: 700px;
     margin: 1rem;
   }
@@ -23,5 +25,5 @@
     perceive it.
   </p>
 
-  <Loader />
+  <Link href="/fact">Get random chart</Link>
 </div>

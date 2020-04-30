@@ -15,6 +15,7 @@
 
 <script>
   import Quote from "../../components/ui/Quote.svelte";
+  import Link from "../../components/ui/Link.svelte";
   import Stack from "../../components/layout/Stack.svelte";
 
   export let fact;
@@ -30,30 +31,6 @@
     width: 100%;
     height: 600px;
     border: 0px none;
-  }
-
-  .random {
-    display: block;
-    cursor: pointer;
-    border-radius: 0px;
-    text-decoration: none;
-    padding: 0.75rem 1rem;
-    font-size: 0.75rem;
-    line-height: 1rem;
-    text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: 3px;
-    transition: all 0.4s ease-in-out;
-    border: solid 2px #1f1f1f;
-    background: transparent;
-    color: #1f1f1f;
-  }
-
-  .random:active,
-  .random:hover {
-    border: solid 2px #1f1f1f;
-    background: #1f1f1f;
-    color: #fff;
   }
 </style>
 
@@ -101,6 +78,6 @@
       </section>
     {/each}
 
-    <a class="random" href="/fact">Get random chart</a>
+    <Link href="/fact">Get random chart</Link>
   </Stack>
 </div>
