@@ -186,7 +186,13 @@ export default [
     title: 'Literacy rate, 1475 to 2015',
     chartURL: 'https://ourworldindata.org/grapher/cross-country-literacy-rates',
     relatedArticles: [{ title: 'Literacy', url: 'https://ourworldindata.org/literacy' }],
-    quotes: [],
+    quotes: [
+      {
+        author: 'by Max Roser and Esteban Ortiz-Ospina',
+        text:
+          'While the earliest forms of written communication date back to about 3,500-3,000 BCE, literacy remained for centuries a very restricted technology closely associated with the exercise of power. It was only until the Middle Ages that book production started growing and literacy among the general population slowly started becoming important in the Western World.2 In fact, while the ambition of universal literacy in Europe was a fundamental reform born from the Enlightenment, it took centuries for it to happen. It was only in the 19th and 20th centuries that rates of literacy approached universality in early-industrialized countries.',
+      },
+    ],
     slug: 'literacy-rate',
     thumbnail: 'https://ourworldindata.org/grapher/exports/cross-country-literacy-rates.png?v=17',
   },
@@ -194,7 +200,13 @@ export default [
     title: 'Literate and illiterate world population',
     chartURL: 'https://ourworldindata.org/grapher/literate-and-illiterate-world-population',
     relatedArticles: [{ title: 'Literacy', url: 'https://ourworldindata.org/literacy' }],
-    quotes: [],
+    quotes: [
+      {
+        author: 'by Max Roser and Esteban Ortiz-Ospina',
+        text:
+          'While the earliest forms of written communication date back to about 3,500-3,000 BCE, literacy remained for centuries a very restricted technology closely associated with the exercise of power. It was only until the Middle Ages that book production started growing and literacy among the general population slowly started becoming important in the Western World.2 In fact, while the ambition of universal literacy in Europe was a fundamental reform born from the Enlightenment, it took centuries for it to happen. It was only in the 19th and 20th centuries that rates of literacy approached universality in early-industrialized countries.',
+      },
+    ],
     slug: 'literate-and-illiterate-world-population',
     thumbnail:
       'https://ourworldindata.org/grapher/exports/literate-and-illiterate-world-population.png?v=3',
@@ -216,7 +228,13 @@ export default [
     relatedArticles: [
       { title: 'Global Education', url: 'https://ourworldindata.org/global-education' },
     ],
-    quotes: [],
+    quotes: [
+      {
+        author: 'by Max Roser and Esteban Ortiz-Ospina',
+        text:
+          'For 1998 it is estimated that 381 million children were out of school. Until 2014 this number fell to 263 million, despite an increase in the global young population.',
+      },
+    ],
     slug: 'number-of-out-of-school-children',
     thumbnail:
       'https://ourworldindata.org/grapher/exports/number-of-out-of-school-children.png?v=2',
@@ -270,8 +288,14 @@ export default [
   {
     title: 'Change in cereal production, yield and land use, World, 1961 to 2018',
     chartURL: 'https://ourworldindata.org/grapher/index-of-cereal-production-yield-and-land-use',
-    relatedArticles: [{ title: 'Crop yields', url: 'https://ourworldindata.org/crop-yields' }],
-    quotes: [],
+    relatedArticles: [{ title: 'Crop yields', url: 'Nhttps://ourworldindata.org/crop-yields' }],
+    quotes: [
+      {
+        author: 'by Hannah Ritchie and Max Roser',
+        text:
+          'From 1961 to 2014, global cereal production has increased by 280 percent. If we compare this increase to that of total population (which increased only 136 percent over the same period), we see that global cereal production has increased at a much faster rate than that of population. If distributed equally, cereal production per person has increased despite a growing population.',
+      },
+    ],
     slug: 'change-in-cereal-production',
     thumbnail:
       'https://ourworldindata.org/grapher/exports/index-of-cereal-production-yield-and-land-use.png?v=5',
@@ -313,7 +337,10 @@ export default [
     relatedArticles: [
       { title: 'Technological Progress', url: 'https://ourworldindata.org/technological-progress' },
     ],
-    quotes: [],
+    quotes: [{
+      author:  'by Max Roser and Hannah Ritchie',
+      text: '(...) the power and speed of computers increased exponentially; the doubling time of computational capacity for personal computers was 1.5 years between 1975 to 2009.'
+    }],
     slug: 'supercomputer-power',
     thumbnail: 'https://ourworldindata.org/grapher/exports/supercomputer-power-flops.png?v=1',
   },
@@ -336,7 +363,13 @@ export default [
     title: 'Prevalence, new cases and deaths from HIV/AIDS, World, 1990 to 2017',
     chartURL: 'https://ourworldindata.org/grapher/deaths-and-new-cases-of-hiv',
     relatedArticles: [{ title: 'Health', url: 'https://ourworldindata.org/health-meta' }],
-    quotes: [],
+    quotes: [
+      {
+        author: 'by Max Roser and Hannah Ritchie',
+        text:
+          'Between 1996 and 2001 more than 3 million people were infected with HIV ever year. Since then the number of new infections began to decline and in 2017 it was reduced to below 2 million. The lowest number of new infections since 1990.',
+      },
+    ],
     slug: 'prevalence-new-cases-and-deaths-from-hiv-aids',
     thumbnail: 'https://ourworldindata.org/grapher/exports/deaths-and-new-cases-of-hiv.png?v=6',
   },
@@ -378,7 +411,13 @@ export default [
     title: 'Deaths from protein-energy malnutrition, by age, World, 1990 to 2017',
     chartURL: 'https://ourworldindata.org/grapher/malnutrition-deaths-by-age',
     relatedArticles: [{ title: 'Famines', url: 'https://ourworldindata.org/famines' }],
-    quotes: [],
+    quotes: [
+      {
+        author: 'by Joe Hasell and Max Roser',
+        text:
+          'The number of people dying globally due to insufficient calorie or protein intake has also fallen, from almost half a million in the 1990s to roughly 300,000 in the most recent data',
+      },
+    ],
     slug: 'deaths-from-protein-energy-malnutrition',
     thumbnail: 'https://ourworldindata.org/grapher/exports/malnutrition-deaths-by-age.png?v=7',
   },
@@ -395,7 +434,13 @@ export default [
     chartURL:
       'https://ourworldindata.org/grapher/share-of-the-population-with-access-to-improved-drinking-water?tab=chart',
     relatedArticles: [{ title: 'Water Access', url: 'https://ourworldindata.org/water-access' }],
-    quotes: [],
+    quotes: [
+      {
+        author: 'by Hannah Ritchie and Max Roser',
+        text:
+          'Access to improved water sources is increasing across the world, rising from 76% of the global population in 1990 to 91% in 2015.',
+      },
+    ],
     slug: 'share-of-the-population-with-access-to-improved-drinking-water',
     thumbnail:
       'https://ourworldindata.org/grapher/exports/share-of-the-population-with-access-to-improved-drinking-water.png?v=1',
