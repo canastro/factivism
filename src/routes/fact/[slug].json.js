@@ -1,4 +1,4 @@
-import facts from '../../data/facts.js';
+import facts from '../../data';
 
 const DEFAULT_FACT = { title: '', chartURL: '', relatedArticles: [], quotes: [] };
 const lookup = new Map();

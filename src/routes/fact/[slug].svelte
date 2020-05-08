@@ -14,9 +14,10 @@
 </script>
 
 <script>
-  import Quote from "../../components/ui/quote.svelte";
   import Link from "../../components/ui/link.svelte";
   import Stack from "../../components/layout/stack.svelte";
+  import OurWorldInData from "./our-world-in-data.svelte";
+  import Youtube from "./youtube.svelte";
 
   export let fact;
 </script>
@@ -25,12 +26,6 @@
   .root {
     min-height: 700px;
     margin: 1rem;
-  }
-
-  iframe {
-    width: 100%;
-    height: 600px;
-    border: 0px none;
   }
 </style>
 
@@ -61,23 +56,12 @@
     perceive it.
   </p>
   <Stack>
-    <iframe title={fact.title} src={fact.chartURL} />
 
-    {#each fact.quotes as { text, author }}
-      <Quote {author}>{text}</Quote>
-    {/each}
-
-    {#each fact.relatedArticles as { title, url }}
-      <section class="articles">
-        <h2>Related articles</h2>
-        <ul>
-          <li>
-            <a href={url}>{title}</a>
-          </li>
-        </ul>
-      </section>
-    {/each}
-
-    <Link href="/fact">Get random chart</Link>
+    {#if fact.type === 'youtube'}
+      <Youtube {fact} />
+    {:else}
+      <OurWorldInData {fact} />
+    {/if}
+    <Link href="/fact">Get random page!</Link>
   </Stack>
 </div>

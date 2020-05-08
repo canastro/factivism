@@ -3,7 +3,7 @@ import express from 'express';
 import compression from 'compression';
 import * as sapper from '@sapper/server';
 
-import facts from './data/facts';
+import facts from './data';
 
 const { PORT, NODE_ENV } = process.env;
 const dev = NODE_ENV === 'development';

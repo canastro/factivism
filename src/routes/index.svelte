@@ -25,5 +25,5 @@
     perceive it.
   </p>
 
-  <Link href="/fact">Get random chart</Link>
+  <Link href="/fact">Get random page!</Link>
 </div>
