@@ -38,7 +38,6 @@
     content={`A chart about ${fact.title} from ourworldindata.org`} />
   <meta property="og:image" content={fact.thumbnail} />
   <meta property="og:site_name" content="Factivism" />
-  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@canastro" />
   <meta name="twitter:creator" content="@canastro" />
   <meta name="twitter:title" content={fact.title} />
