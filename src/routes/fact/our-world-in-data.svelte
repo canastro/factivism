@@ -12,6 +12,11 @@
   }
 </style>
 
+<svelte:head>
+  <meta property="og:image" content={fact.thumbnail} />
+  <meta name="twitter:image" content={fact.thumbnail} />
+</svelte:head>
+
 <iframe title={fact.title} src={fact.chartURL} />
 
 {#each fact.quotes as { text, author }}
